@@ -63,19 +63,24 @@ Security posts are placed around the campus, and porters keep watch at the hoste
   What we saw: A paper register with a handful of items handed in over the past weeks, including two phones and several ID cards.
   What happened: Staff said most items stay unclaimed because owners do not know to ask.
 4. How We Researched It
-4.1 Questions we wanted answered
+  
+-4.1 Questions we wanted answered
+  
 How often do students lose things, and what do they lose most?
 What do they do straight after they notice something is missing?
 How often do they get it back, and how?
 When someone finds an item, what do they do, and what stops them from returning it?
 How do security staff and offices deal with found items, and what is hard about it?
 What already exists, and where does it fall short?
-4.2 Methods
+-4.2 Methods
+  
 Observation: Look at notice boards, security desks and group chats (with permission)
 Survey: At least 20 to 30 students, using a Google Form or paper
 Interviews: At least 3 students (one who lost something, one who found something), 1 security officer or porter, and an administrator if possible
 Review of what exists: WhatsApp groups, notice boards, the security desk and any lost and found apps
+
 4.3 Survey questions
+
 What level are you? (100 / 200 / 300 / 400 / other)
 Have you lost something on campus in the last year? (Yes / No)
 What was it? (phone, ID card, calculator, bag, keys, wallet, laptop, books, other)
