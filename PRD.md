@@ -1,11 +1,19 @@
 Product Requirements Document (PRD)
+
 -FoundIt: A Campus Lost and Found Platform
+
 -Group name: Silver
+
 -Department / Group: Software Engineering, Group D
+
 -Course: COS209
+
 -Submitted by: Olukokun Temiloluwa David
+
 -Version: 0.1
+
 -Status: Draft for review
+
 -Contents
 - Executive Summary
 - Problem Statement
