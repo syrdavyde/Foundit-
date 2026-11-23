@@ -46,10 +46,12 @@ In one sentence:
 When something is lost or found on campus, there is no reliable, central way for the owner and the finder to find each other.
 3. Background and Context
 3.1 Our campus
+  
 Our campus is a residential university where most students live in hostels on or close to the school grounds, so a typical day involves moving between the hostel, lecture halls, the library, the cafeteria and sports areas. Students from different levels share these spaces, and lectures for a single class are often held in different halls on different days. That means students are constantly carrying things such as phones, calculators, ID cards, power banks and books from place to place, and things get left behind easily, especially when a class ends quickly or people rush to the next one.
 
 Security posts are placed around the campus, and porters keep watch at the hostels and some buildings. As far as we could tell, there is no official lost and found desk that students widely know about. When something goes missing, students mostly post in class and hostel WhatsApp groups, ask coursemates, or check with security or the nearest office. Nothing connects these channels, so an item found in one place is rarely linked to someone searching in another.
 3.2 What we observed ourselves
+
 - 9 Nov 2026
   Place: 200L class WhatsApp group
   What we saw: Three "lost" posts in one afternoon (a calculator, a flash drive and an ID card). Each was buried under assignment and timetable messages within the hour.
@@ -82,49 +84,91 @@ Review of what exists: WhatsApp groups, notice boards, the security desk and any
 4.3 Survey questions
 
 What level are you? (100 / 200 / 300 / 400 / other)
+
 Have you lost something on campus in the last year? (Yes / No)
+
 What was it? (phone, ID card, calculator, bag, keys, wallet, laptop, books, other)
+
 Where did you lose it? (lecture hall, library, cafeteria, hostel, other)
+
 What did you do to find it? (tick all: asked around, posted in WhatsApp, went to security, checked a notice board, other)
+
 Did you get it back? (Yes / No / Partly) How long did it take?
+
 Have you ever found something that belonged to someone else? What did you do with it?
+
 If you found something, what stopped you from returning it, if anything? (did not know who to give it to, afraid of being accused, no time, did not know the owner, other)
+
 Do you know where to report a lost or found item on campus? (Yes / No)
+
 How much did losing it cost you in money or time? (open answer)
+
 Would you use a simple campus tool to report and search for lost and found items? (Yes / No / Maybe) What would make you trust it?
+
 4.4 Interview guide
+
 Student who lost something: Tell us about the last time you lost something. What happened in the first hour? The first day? Who did you tell? How did it end? What would have helped most?
+
 Student who found something: What did you find and what did you do with it? How did you know who to give it to? Were you worried about returning it?
+
 Security officer or porter: How do you handle and record found items? How do you check that someone is the real owner? What ends up unclaimed? What would make your work easier?
+
 Administrator (optional): Is there an official lost and found policy? What happens to items nobody claims?
+
 5. What We Found
 5.1 Survey results
+   
 - 24 respondents (simulated). By level: 100L: 3, 200L: 10, 300L: 9, 400L: 2.
 Lost something on campus in the past year: 17 of 24 (71%)
+
 What was lost most (among those 17): ID cards 6, calculators 4, phones 3, power banks 2, keys 1, other 1
+
 Where it was lost: Lecture halls 8, library 4, cafeteria 3, hostel 2
+
 Got the item back fully: 5 of 17 (29%); partly 3 (18%); not at all 9 (53%)
+
 Average time to get it back: About 3 days
+
 Know where to report lost or found items: 7 of 24 (29%)
+
 Found someone else's item: 15 of 24 (63%)
+
 Of those 15, could not return it: 9 (60%)
+
 Why finders could not return items: Did not know who to give it to (5), afraid of being accused (2), no time (2)
+
 How owners searched: WhatsApp group posts (14), asking around (10), security (4), notice board (2)
+
 Would use a dedicated tool: Yes 20 (83%), Maybe 3 (13%), No 1 (4%)
+
 5.2 Interview notes
+
 R3, 200L student (lost a calculator): Posted in four class WhatsApp groups before a test, but the messages got buried within minutes. Never found out if anyone picked it up.
+
 R9, 300L student (lost an ID card): Needed it for an exam. Spent two days going from office to office. Had no idea a security post might be holding it.
+
 R14, 200L student (found a phone): Had no idea whose it was. Posted in a group, and several people claimed it. Stopped replying because they were scared of giving it to the wrong person.
+
 R18, 300L student (found a power bank): Left it with a coursemate, who later could not remember where it went.
+
 S1, security officer: Keeps a paper register of items handed in. Many stay unclaimed because owners do not know to ask. Hard to tell who the real owner is.
+
 5.3 What this tells us
+
 Information is scattered. Owners depend on WhatsApp posts that disappear in busy groups, and only 29% of students know where to report a lost or found item.
+
 Few people get their things back. Only about 3 in 10 owners fully recover what they lost, and it takes days.
+
 Finders want to help but do not know how. Most do not know who to give the item to, or they worry about false claims and blame.
+
 Proving ownership is the missing piece. Finders and security staff both struggle to confirm who the real owner is. This is why our MVP includes a verification step.
+
 People want it. 83% said they would use a dedicated tool.
+
 6. Who Is Affected
+
 Owner (main user)
+
 - What they want: Get the item back fast, or at least know it was found
 - What frustrates them: Does not know where to report; group posts get buried; cannot tell if anyone found it
 - Limits they work under: Stressed and in a hurry (for example, needs an ID card for an exam); limited data
@@ -156,17 +200,29 @@ WhatsApp or Telegram groups
 - What is good about it: Quick
 - Why it falls short: Small reach and unreliable
 The gap: There is no single place where owners can search for what has been found, finders can report it in seconds, and ownership can be checked safely.
+
 8. Goals and Success Metrics
+
 8.1 Goals
+  
 Get more lost items back to their owners.
+
 Cut the time between losing something and getting it back.
+
 Make it easy and safe for finders to report what they find.
+
 Reduce false claims.
+
 8.2 How we would measure success (in a pilot)
+
 Lost items fully recovered
+
 Where we start (from our research): 29% (simulated survey)
+
 - Target: +30 percentage points
+
   Average time to get an item back
+  
   Where we start (from our research): About 3 days (simulated survey)
 - Target: Under 48 hours
   Students who know where to report
