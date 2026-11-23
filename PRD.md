@@ -1,73 +1,60 @@
 Product Requirements Document (PRD)
 FoundIt: A Campus Lost and Found Platform
-
 Group name: Silver
 Department / Group: Software Engineering, Group D
 Course: COS209
 Submitted by: Olukokun Temiloluwa David
-Version: 0.1 
+Version: 0.1
 Status: Draft for review
-
 Contents
-Executive Summary
-Problem Statement
-Background and Context
-How We Researched It
-What We Found
-Who Is Affected
-What People Do Now
-Goals and Success Metrics
-Our Proposed Solution
-The MVP
-Functional Requirements
-Non-Functional Requirements
-Assumptions, Constraints and Risks
-Open Questions
-Rollout and Testing Plan
-Technology Choice (Later)
-
+- Executive Summary
+- Problem Statement
+- Background and Context
+- How We Researched It
+- What We Found
+- Who Is Affected
+- What People Do Now
+- Goals and Success Metrics
+- Our Proposed Solution
+- The MVP
+- Functional Requirements
+- Non-Functional Requirements
+- Assumptions, Constraints and Risks
+- Open Questions
+- Rollout and Testing Plan
+- Technology Choice (Later)
 1. Executive Summary
-
 Almost everyone on campus has lost something at some point. Phones, ID cards, calculators, power banks, keys, bags, textbooks, wallets: they go missing in lecture halls, the library and the cafeteria every week. When it happens, getting the item back mostly comes down to luck. People post in WhatsApp groups, ask around, or check with security, and the person who found the item often has no idea who it belongs to or where to take it.
 
 This document explains the problem, who it affects, how people deal with it today and why that does not work well. It then lays out our idea for a fix and the smallest first version of it (the MVP), along with the requirements, risks and a plan to test it.
 
 We have not chosen a programming language or any technology yet. We want to be sure we understand the problem properly first.
-
 2. Problem Statement
-
-Who: Students, lecturers and staff who lose things, and the students, security staff and hall or hostel staff who find them
-What: Lost items often never get back to their owners because there is no single place that everyone knows and trusts for lost and found reports
-Where and when: Lecture halls, libraries, cafeterias, hostels, sports grounds, shuttle stops and walkways. It happens all semester but gets worse during exams and events
-Impact: Money spent replacing phones, ID cards and calculators; missed exams when an ID card is gone; lost documents; stress; and items that finders would gladly return but cannot
-
+- Who: Students, lecturers and staff who lose things, and the students, security staff and hall or hostel staff who find them
+- What: Lost items often never get back to their owners because there is no single place that everyone knows and trusts for lost and found reports
+- Where and when: Lecture halls, libraries, cafeterias, hostels, sports grounds, shuttle stops and walkways. It happens all semester but gets worse during exams and events
+- Impact: Money spent replacing phones, ID cards and calculators; missed exams when an ID card is gone; lost documents; stress; and items that finders would gladly return but cannot
 In one sentence:
-
 When something is lost or found on campus, there is no reliable, central way for the owner and the finder to find each other.
-
 3. Background and Context
 3.1 Our campus
-
 Our campus is a residential university where most students live in hostels on or close to the school grounds, so a typical day involves moving between the hostel, lecture halls, the library, the cafeteria and sports areas. Students from different levels share these spaces, and lectures for a single class are often held in different halls on different days. That means students are constantly carrying things such as phones, calculators, ID cards, power banks and books from place to place, and things get left behind easily, especially when a class ends quickly or people rush to the next one.
 
 Security posts are placed around the campus, and porters keep watch at the hostels and some buildings. As far as we could tell, there is no official lost and found desk that students widely know about. When something goes missing, students mostly post in class and hostel WhatsApp groups, ask coursemates, or check with security or the nearest office. Nothing connects these channels, so an item found in one place is rarely linked to someone searching in another.
-
 3.2 What we observed ourselves
-
-9 Nov 2026
-Place: 200L class WhatsApp group
-What we saw: Three "lost" posts in one afternoon (a calculator, a flash drive and an ID card). Each was buried under assignment and timetable messages within the hour.
-What happened: None of the three posts got a reply. Two owners reposted the next day.
-12 Nov 2026
-Place: Porters' desk at a hostel
-What we saw: A porter showed us a small box of items left with him by students, including a phone charger, a flash drive and a water bottle, with no list of who left what.
-What happened: He said he only returns things when someone happens to ask, and has no way of telling who the real owner is.
-16 Nov 2026
-Place: Security post
-What we saw: A paper register with a handful of items handed in over the past weeks, including two phones and several ID cards.
-What happened: Staff said most items stay unclaimed because owners do not know to ask.
+- 9 Nov 2026
+  Place: 200L class WhatsApp group
+  What we saw: Three "lost" posts in one afternoon (a calculator, a flash drive and an ID card). Each was buried under assignment and timetable messages within the hour.
+  What happened: None of the three posts got a reply. Two owners reposted the next day.
+- 12 Nov 2026
+  Place: Porters' desk at a hostel
+  What we saw: A porter showed us a small box of items left with him by students, including a phone charger, a flash drive and a water bottle, with no list of who left what.
+  What happened: He said he only returns things when someone happens to ask, and has no way of telling who the real owner is.
+- 16 Nov 2026
+  Place: Security post
+  What we saw: A paper register with a handful of items handed in over the past weeks, including two phones and several ID cards.
+  What happened: Staff said most items stay unclaimed because owners do not know to ask.
 4. How We Researched It
-
 4.1 Questions we wanted answered
 How often do students lose things, and what do they lose most?
 What do they do straight after they notice something is missing?
@@ -97,12 +84,9 @@ Student who lost something: Tell us about the last time you lost something. What
 Student who found something: What did you find and what did you do with it? How did you know who to give it to? Were you worried about returning it?
 Security officer or porter: How do you handle and record found items? How do you check that someone is the real owner? What ends up unclaimed? What would make your work easier?
 Administrator (optional): Is there an official lost and found policy? What happens to items nobody claims?
-
 5. What We Found
 5.1 Survey results
-
-24 respondents (simulated). By level: 100L: 3, 200L: 10, 300L: 9, 400L: 2.
-
+- 24 respondents (simulated). By level: 100L: 3, 200L: 10, 300L: 9, 400L: 2.
 Lost something on campus in the past year: 17 of 24 (71%)
 What was lost most (among those 17): ID cards 6, calculators 4, phones 3, power banks 2, keys 1, other 1
 Where it was lost: Lecture halls 8, library 4, cafeteria 3, hostel 2
@@ -128,41 +112,37 @@ Proving ownership is the missing piece. Finders and security staff both struggle
 People want it. 83% said they would use a dedicated tool.
 6. Who Is Affected
 Owner (main user)
-What they want: Get the item back fast, or at least know it was found
-What frustrates them: Does not know where to report; group posts get buried; cannot tell if anyone found it
-Limits they work under: Stressed and in a hurry (for example, needs an ID card for an exam); limited data
-Finder (main user)
-What they want: Return the item without hassle or suspicion
-What frustrates them: Does not know the owner or where to take the item; worried about blame or wasted time
-Limits they work under: Short on time
-Security officers, porters and office staff
-What they want: Record found items properly and give them to the right person
-What frustrates them: Paper registers, unclear ownership, unclaimed items piling up
-Limits they work under: Heavy workload, so the process must be simple
-Student affairs / administration
-What they want: A safer campus with fewer complaints and disputes
-What frustrates them: Ends up handling disputes with little information
-Limits they work under: Needs oversight and approval
+- What they want: Get the item back fast, or at least know it was found
+- What frustrates them: Does not know where to report; group posts get buried; cannot tell if anyone found it
+- Limits they work under: Stressed and in a hurry (for example, needs an ID card for an exam); limited data
+  Finder (main user)
+- What they want: Return the item without hassle or suspicion
+- What frustrates them: Does not know the owner or where to take the item; worried about blame or wasted time
+- Limits they work under: Short on time
+  Security officers, porters and office staff
+- What they want: Record found items properly and give them to the right person
+- What frustrates them: Paper registers, unclear ownership, unclaimed items piling up
+- Limits they work under: Heavy workload, so the process must be simple
+  Student affairs / administration
+- What they want: A safer campus with fewer complaints and disputes
+- What frustrates them: Ends up handling disputes with little information
+- Limits they work under: Needs oversight and approval
 Example user
-
 Ada, 200-level student. She left her calculator and ID card in a lecture hall before a test. She posted in three WhatsApp groups and visited two offices, and still had no idea whether anyone had found them. A coursemate had actually picked them up but did not know whose they were.
-
 7. What People Do Now (and Why It Does Not Work)
 WhatsApp or Telegram groups
-What is good about it: Fast, free, everyone uses it
-Why it falls short: Messages get buried, reach is limited, no structure, and no way to check a claim
-Notice boards
-What is good about it: Visible and official
-Why it falls short: Only people who walk past see them; they go out of date; you cannot search them
-Security desk or porters' lodge
-What is good about it: Items are kept safely
-Why it falls short: Records are on paper, owners do not know to go there, and there is no clear way to verify them
-Asking friends
-What is good about it: Quick
-Why it falls short: Small reach and unreliable
-
+- What is good about it: Fast, free, everyone uses it
+- Why it falls short: Messages get buried, reach is limited, no structure, and no way to check a claim
+  Notice boards
+- What is good about it: Visible and official
+- Why it falls short: Only people who walk past see them; they go out of date; you cannot search them
+  Security desk or porters' lodge
+- What is good about it: Items are kept safely
+- Why it falls short: Records are on paper, owners do not know to go there, and there is no clear way to verify them
+  Asking friends
+- What is good about it: Quick
+- Why it falls short: Small reach and unreliable
 The gap: There is no single place where owners can search for what has been found, finders can report it in seconds, and ownership can be checked safely.
-
 8. Goals and Success Metrics
 8.1 Goals
 Get more lost items back to their owners.
@@ -172,29 +152,27 @@ Reduce false claims.
 8.2 How we would measure success (in a pilot)
 Lost items fully recovered
 Where we start (from our research): 29% (simulated survey)
-Target: +30 percentage points
-Average time to get an item back
-Where we start (from our research): About 3 days (simulated survey)
-Target: Under 48 hours
-Students who know where to report
-Where we start (from our research): 29% (simulated survey)
-Target: 80%
-Found items reported per week in the pilot
-Where we start (from our research): n/a
-Target: 15
-Fraudulent claims
-Where we start (from our research): Not measured
-Target: Close to zero
+- Target: +30 percentage points
+  Average time to get an item back
+  Where we start (from our research): About 3 days (simulated survey)
+- Target: Under 48 hours
+  Students who know where to report
+  Where we start (from our research): 29% (simulated survey)
+- Target: 80%
+  Found items reported per week in the pilot
+  Where we start (from our research): n/a
+- Target: 15
+  Fraudulent claims
+  Where we start (from our research): Not measured
+- Target: Close to zero
 8.3 What we are not doing (in version 1)
 No payments or rewards.
 It is not a crime or security reporting tool.
 No tracking of items with GPS or tags.
 9. Our Proposed Solution
-
 FoundIt is a simple campus platform with two main actions: "I lost something" and "I found something."
 
 An owner posts a lost item report. A finder posts what they found, with a photo and where it is being kept (for example, at a security post). The system then suggests likely matches. Because public listings can be abused, we hide the details that prove ownership, such as a serial number, a distinguishing mark or what is inside a bag. The owner has to supply those details before anything is handed over.
-
 Principles we are designing around
 Posting should take less than a minute.
 It should work on low data and basic phones.
@@ -210,9 +188,7 @@ Keep personal details private by default.
 6. Status tracking: Open, matched, returned or closed (expired)
 7. Staff account: Security staff log items handed in and mark them as returned
 10.2 What is left out for now
-
 In-app chat, rewards, automatic image recognition, a link to the school ID database and live GPS maps.
-
 10.3 User stories
 US1: As an owner, I want to report a lost item quickly so that people know to look for it. Done when a report can be submitted in under a minute.
 US2: As a finder, I want to post a found item with a photo and where it is kept so that the owner can find it. Done when the post shows the photo, category, location and drop-off point.
@@ -242,45 +218,39 @@ Availability: Reliable during the working day, and shows saved listings when off
 Accessibility: Easy to read on small screens, in plain language
 Growth: Starts with one campus or faculty but can grow
 13. Assumptions, Constraints and Risks
-
 What we are assuming
-
 Students have a smartphone or can get to a computer.
 Security staff are willing to take part.
 Most finders will return items if it is easy enough.
-
 Limits we are working within
-
 A student project timeline and a small budget.
 Unreliable network and power.
 We would need campus approval to use security posts.
-
 Risks
-
 People just keep using WhatsApp
-Likelihood: High
-Impact: High
-How we would handle it: Launch with security staff and class reps, and make it easy to share posts into existing groups
-False claims or theft
-Likelihood: Medium
-Impact: High
-How we would handle it: Hidden verification details, staff-assisted handover and a way to report suspicious claims
-Privacy worries about photos and contacts
-Likelihood: Medium
-Impact: High
-How we would handle it: Show minimal info and share contacts only after approval
-Not enough found items get posted
-Likelihood: Medium
-Impact: High
-How we would handle it: Make posting very fast and work with security desks
-Spam or fake posts
-Likelihood: Medium
-Impact: Medium
-How we would handle it: Verified accounts, moderation and reporting
-Poor connectivity
-Likelihood: High
-Impact: Medium
-How we would handle it: Light pages, compressed images and caching
+- Likelihood: High
+- Impact: High
+- How we would handle it: Launch with security staff and class reps, and make it easy to share posts into existing groups
+  False claims or theft
+- Likelihood: Medium
+- Impact: High
+- How we would handle it: Hidden verification details, staff-assisted handover and a way to report suspicious claims
+  Privacy worries about photos and contacts
+- Likelihood: Medium
+- Impact: High
+- How we would handle it: Show minimal info and share contacts only after approval
+  Not enough found items get posted
+- Likelihood: Medium
+- Impact: High
+- How we would handle it: Make posting very fast and work with security desks
+  Spam or fake posts
+- Likelihood: Medium
+- Impact: Medium
+- How we would handle it: Verified accounts, moderation and reporting
+  Poor connectivity
+- Likelihood: High
+- Impact: Medium
+- How we would handle it: Light pages, compressed images and caching
 14. Open Questions
 Does the school already have an official lost and found process or office?
 Where should found items be physically kept (security post or student affairs)?
@@ -292,5 +262,4 @@ How long should unclaimed items be kept, and what happens to them afterwards?
 3. Measure: Compare the results with the numbers in Section 8.2
 4. Decide: Improve it, expand it or change direction based on what we learn
 16. Technology Choice (Later)
-
 We have not picked a programming language, framework or platform. We will decide that after this PRD has been checked, based on the requirements above: low data use, photo uploads, notifications, privacy, our skill level and cost.
