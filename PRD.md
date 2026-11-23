@@ -243,12 +243,18 @@ FoundIt is a simple campus platform with two main actions: "I lost something" an
 
 An owner posts a lost item report. A finder posts what they found, with a photo and where it is being kept (for example, at a security post). The system then suggests likely matches. Because public listings can be abused, we hide the details that prove ownership, such as a serial number, a distinguishing mark or what is inside a bag. The owner has to supply those details before anything is handed over.
 Principles we are designing around
+
 Posting should take less than a minute.
+
 It should work on low data and basic phones.
+
 Handovers should be safe, with ownership verified and a security post as the preferred meeting point.
+
 Keep personal details private by default.
+
 10. The MVP (Version 1)
 10.1 What is in
+    
 1. Report a lost item: Category, description, location, date, optional photo and a way to contact the owner
 2. Report a found item: Category, description, photo and where the item is being kept
 3. Browse and search: Search found items by category, location and date
@@ -258,35 +264,62 @@ Keep personal details private by default.
 7. Staff account: Security staff log items handed in and mark them as returned
 10.2 What is left out for now
 In-app chat, rewards, automatic image recognition, a link to the school ID database and live GPS maps.
+
 10.3 User stories
+
 US1: As an owner, I want to report a lost item quickly so that people know to look for it. Done when a report can be submitted in under a minute.
+
 US2: As a finder, I want to post a found item with a photo and where it is kept so that the owner can find it. Done when the post shows the photo, category, location and drop-off point.
+
 US3: As an owner, I want to search found items so that I can check whether mine was found. Done when search filters by category, location and date.
+
 US4: As an owner, I want to claim an item safely so that nobody else can take it. Done when the claim needs the right answer to a hidden verification detail.
+
 US5: As a finder, I want to approve or reject a claim so that the item goes to the right person. Done when contact details are shared only after approval.
+
 US6: As a member of security staff, I want to log items handed in and mark returns so that our records are accurate. Done when staff can add items and set the status to returned.
+
 US7: As an owner or finder, I want to get notified of a possible match so that I do not have to keep checking. Done when a notification is sent when a likely match is posted.
+
 11. Functional Requirements
 FR1: Users can create an account using their school email or matric number (Priority: Must; Story: All)
+
 FR2: Users can post a lost item report (Priority: Must; Story: US1)
+
 FR3: Users can post a found item report with a photo and drop-off location (Priority: Must; Story: US2)
+
 FR4: Users can search and filter found items (Priority: Must; Story: US3)
+
 FR5: The system suggests matches between lost and found reports (Priority: Should; Story: US7)
+
 FR6: A claim flow with hidden verification details (Priority: Must; Story: US4)
+
 FR7: Contact details are shared only after a claim is approved (Priority: Must; Story: US5)
+
 FR8: Staff accounts can log found items and mark them as returned (Priority: Must; Story: US6)
+
 FR9: Posts expire or are archived after a set time (for example, 60 days) (Priority: Should; Story: n/a)
+
 FR10: Users can report suspicious or fake posts (Priority: Should; Story: n/a)
+
 FR11: Notifications for matches and claim updates (Priority: Should; Story: US7)
-12. Non-Functional Requirements
+
+13. Non-Functional Requirements
 Ease of use: A first-time user can post an item in under a minute without help
+
 Low data use: Photos are compressed and the app works on slow connections
+
 Privacy and security: Hide sensitive item details and contact info until verified, protect passwords and store as little data as possible
+
 Trust and safety: Moderation, a way to report suspicious posts, and a recommendation to hand items over at secure locations
+
 Availability: Reliable during the working day, and shows saved listings when offline
+
 Accessibility: Easy to read on small screens, in plain language
+
 Growth: Starts with one campus or faculty but can grow
-13. Assumptions, Constraints and Risks
+
+15. Assumptions, Constraints and Risks
 What we are assuming
 Students have a smartphone or can get to a computer.
 Security staff are willing to take part.
